@@ -1,0 +1,14 @@
+version: 0.2
+
+env:
+  variables:
+    PROJECT: DasithAwsCodePipelinePoc
+    DOTNET_FRAMEWORK: 4.8
+phases:
+  build:
+    commands:
+      - msbuild DasithAwsCodePipelinePoc.csproj /p:TargetFrameworkVersion=v4.8 /p:Configuration=Release /p:OutDir=C:\codebuild\artifacts\
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'C:\codebuild\artifacts\'
