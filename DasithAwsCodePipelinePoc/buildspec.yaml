@@ -1,3 +1,7 @@
+# Example from https://aws.amazon.com/blogs/devops/creating-ci-cd-pipelines-for-asp-net-4-x-with-aws-codepipeline-and-aws-elastic-beanstalk/
+# Target 4.8 in csproj and use a 4.8 image "mcr.microsoft.com/dotnet/framework/sdk:4.8-20200512-windowsservercore-ltsc2016"
+# See: https://github.com/microsoft/dotnet-framework-docker/issues/521
+
 version: 0.2
 
 env:
